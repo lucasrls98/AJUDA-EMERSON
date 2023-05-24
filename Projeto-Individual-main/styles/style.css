@@ -1,0 +1,259 @@
+:root{
+    --cor-principal: rgb(25, 25, 112);
+    --cor-secundaria:rgb(224, 255, 255);
+    --cor-hover:rgb(231, 187, 66);
+    /* --cor-background:rgb(97, 133, 199); */
+    --cor-background: linear-gradient(to bottom right, rgb(64, 64, 216), rgb(102, 222, 254));
+    --font-titulo: 'Lato', sans-serif;
+    --font-texto: 'Roboto', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-texto);
+    
+}
+body{
+    background-image: var(--cor-background);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.container-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    gap: 50px;
+}
+
+
+header{
+    background-color:var(--cor-principal);
+    display: flex;
+    color: var(--cor-secundaria);
+    justify-content: space-between;
+    height: 70%;
+    width: 100%;
+    padding: 20px;
+    
+}
+h2{
+    margin-bottom: 20px;
+    color: var(--cor-secundaria);
+}
+
+.titulo-header{
+        background-color: var(--cor-principal);
+        padding-left:60px;
+        text-align: center;
+}
+
+
+.links-header{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--cor-secundaria);
+    
+}
+
+.links-header:hover{    
+    color: var(--cor-hover);
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+
+nav {    
+    display: flex;    
+    width: 33%;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;   
+    
+}
+
+section{
+    width: 80%;    
+    padding: 10px 0;
+}
+
+.container{
+    display: flex;
+    
+    
+
+}
+
+#resumo{
+    display: flex;
+    flex-direction: row;    
+    
+}
+
+.imagem-emerson{
+    width: 35%;
+    border-radius: 12px;
+}
+
+.imagem-emerson:hover{
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+.container{    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.container > h2{
+    font-size: 50px;
+    font-family: var(--font-titulo);
+    
+    
+        
+}
+
+.container > h3{
+    font-size: 25px;
+    font-family: var(--font-titulo);
+}
+.container > p{
+    font-size: 20px;
+
+}
+
+#hobbies {
+    display: flex;
+    align-items: center;         
+    
+}
+.violao{
+    order: 1;
+    width: 35%;    
+
+}
+.imagem-violao:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+
+}
+.hobbies-container{
+    order: 2;
+    display: flex;
+    flex-direction: column;
+}
+.hobbies-container > h2{
+    font-family: var(--font-titulo);
+    font-size: 50px;    
+    
+}
+.hobbies-container > p{
+    font-size: 20px;
+    
+
+}
+
+.ilustracao{
+    align-self: flex-end;
+    width: 60%;
+}
+
+#formulario{    
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--cor-secundaria);
+    padding: 50px 0;
+    border-radius: 16px;
+    box-shadow: 5px 5px 25px rgba(25, 25, 112, 0.606), -5px -5px 25px rgba(25, 25, 112, 0.606);
+    margin-bottom: 30px;
+    
+}
+
+.titulo-form{
+    font-family: var(--font-titulo);        
+    font-size: 50px;
+}
+
+
+
+
+.icone-contato{
+    width: 20%;
+}
+
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    
+}
+#submit,
+#cancel {
+    padding: 5px;
+    margin-top: 10px;
+    font-family: var(--main-font);
+    font-size: 22px;
+    width: 150px;
+    background-color: var(--third-color);
+    margin-right: 100px;
+    border-radius: 16px;
+
+}
+
+#submit:hover,
+#cancel:hover {
+    cursor: pointer;
+    background-color: var(--hover-color);
+    color: var(--second-color);
+    transform: scale(1.1);
+    transition: .27s;
+}
+textarea {
+    resize: vertical;     
+    box-sizing: border-box;    
+}
+
+#mensagem {
+    height: 80px;
+    padding: 10px;
+    font-size: 17px;
+}
+
+.form > input{
+    width: 600px;
+    height: 35px;
+}
+.form > h2{
+    color: var(--cor-principal);
+}
+.form > textarea{
+    width: 600px;
+    height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
